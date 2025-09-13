@@ -27,7 +27,7 @@ COPY --from=build /app/public ./public
 COPY --from=build /app/node_modules ./node_modules
 
 # Next.js runs on port 3000 by default
-EXPOSE 3002
+EXPOSE 3000
 
 # Start the Next.js app
 CMD ["npm", "run", "start"]
